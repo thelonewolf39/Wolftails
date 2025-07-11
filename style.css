@@ -1,0 +1,143 @@
+/* Reset & base */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background: #0b0c10;
+  color: #c5c6c7;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar navigation */
+
+.sidebar {
+  background: #1f2833;
+  padding: 2rem 1rem;
+  width: 220px;
+  min-height: 100vh;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
+
+.sidebar nav ul li a {
+  color: #66fcf1;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+  background-color: #45a29e;
+  color: #0b0c10;
+}
+
+/* Main content */
+
+.content {
+  flex: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero {
+  text-align: center;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #45a29e;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #66fcf1;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px #45a29e;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #a1f0ed;
+}
+
+.button {
+  background: #45a29e;
+  color: #0b0c10;
+  padding: 0.75rem 1.75rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background: #66fcf1;
+  color: #0b0c10;
+  cursor: pointer;
+}
+
+.intro {
+  margin-top: 3rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #66fcf1;
+  text-align: center;
+}
+
+.characters-list {
+  list-style-type: none;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.characters-list li {
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #45a29e;
+  border-top: 1px solid #45a29e;
+  margin-top: 4rem;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 1rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+}
